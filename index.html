@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <section class="hero">
+
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="star star7"></div>
+        <div class="star star8"></div>
+
+        <nav>
+            <img class="logo" src="src/images/FinalLogo.png" alt="Aisa's logo" />
+            <ul>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+        <div class="hero-area">
+            <div class="hero-text">
+                <button  id="btnGlitter" onclick="glitter(1)"><i class="fa-solid fa-hand-sparkles"></i></button>
+            
+                <h1 id="sparkleH1">Aiša <br> Muratspahić
+                    <audio id="glitterAudio" preload="auto">
+                        <source src="src/glitter.mp3">
+                    </audio>
+                </h1>
+                <p>Full Stack Developer</p>
+
+
+
+
+                <div class="socials">
+
+
+                    <div>
+                        <a href="https://www.github.com" class="social">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#0C0032" width="40" height="40"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com" class="social">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#0C0032" width="40" height="40"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                            </svg>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="sub-section" id="about-me">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hello. My name is Aiša Muratspahić. I am a Software Developer.
+            </p>
+        </div>
+        <div class="headshot-container">
+            <img class="headshot" src="src/images/headshot.jpg" alt="Aisa's headshot" />
+        </div>
+    </section>
+    <section class="sub-section-alternative" id="projects">
+        <h2 >Projects</h2>
+    
+        <div class="horizontalScroll">
+            <button class="btnScroll" id="buttonLeft" onclick="scrollHorizontally(1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="btnScroll" id="buttonRight" onclick="scrollHorizontally(-1)"><i class="fa-solid fa-chevron-right"></i></button>
+            
+            <div class="project-container">
+                <div class="project-card">
+                    <img class="project-image" src="src/images/project1.png" alt="Project One Image" />
+                    <h3>Project one</h3>
+                    <p class="subtext">This is my project and some text about it. I really enjoyed making this project.
+                    </p>
+                    <hr />
+                    <p class="subtext"><a class="project-link" href="https://www.github.com">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="src/images/project2.png" alt="Project Two Image" />
+                    <h3>Project two</h3>
+                    <p class="subtext">This is my project and some text about it. I really enjoyed making this project.
+                    </p>
+                    <hr />
+                    <p class="subtext"><a class="project-link" href="https://www.github.com">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="src/images/project3.png" alt="Project Three Image" />
+                    <h3>Project three</h3>
+                    <p class="subtext">This is my project and some text about it. I really enjoyed making this project.
+                    </p>
+                    <hr />
+                    <p class="subtext"><a class="project-link" href="https://www.github.com">View here</a></p>
+                </div>
+            </div>
+        </div>
+    
+
+            
+        
+
+
+    </section>
+
+    <footer id="contact">
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="star star7"></div>
+        <div class="star star8"></div>
+
+
+
+        <div class="contactForm">
+
+            <form>
+                <h3>Contact me</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="4" placeholder="Your message for me.."></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+
+    </footer>
+
+    <script src="src/app.js"></script>
+
+
+</body>
+
+</html>
