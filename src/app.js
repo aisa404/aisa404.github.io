@@ -2,6 +2,10 @@ var sparkleAudio = $("#glitterAudio")[0];
 
 var sparkleHand = document.getElementById("btnGlitter");
 
+
+// Set the title attribute of the element
+sparkleHand.title = "Sound alert! Click to grab the glitter spell and hover over my name to spill the magic";
+
 let click = 0;
 function glitter(val){
     click = click + val;

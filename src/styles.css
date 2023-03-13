@@ -1,7 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Babylonica&family=Cinzel+Decorative:wght@700&family=Cutive+Mono&family=IBM+Plex+Mono&family=Playfair+Display:wght@400;500;600;700;800&family=Press+Start+2P&family=Raleway:ital,wght@0,300;0,800;1,100;1,500&family=Rubik+Iso&family=Silkscreen:wght@400;700&family=Space+Mono&display=swap');
+/* CSS rules to specify families:
+font-family: 'Audiowide', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Playfair Display', serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Silkscreen', cursive;
+font-family: 'Space Mono', monospace;
+*/
+
 body {
-    background-color: #201c25;
+    
+    font-family: 'Cutive Mono', monospace;
+    background-color: #1c1d25;
     margin: 0;
     /* font-family: 'Playfair Display', serif; */
+}
+
+h1 {
+    color: #a6ff00;
+    font-family:'Press Start 2P', cursive;
+    font-size: 50px;
+    margin: 0;
+    -webkit-text-stroke: 2px #7400d3;
+}
+
+h1:hover {
+    color: transparent;
+    -webkit-text-stroke: 0.4px #5b00a5;
+    
 }
 
 
@@ -85,7 +113,6 @@ h2 {
 .hero {
     background-color: #1c1d25;
     height: 100vh;
-    color: white;
     font-size: 30px;
 }
 
@@ -108,45 +135,40 @@ ul {
 }
 
 li {
-
-    width: 100px;
+    color: white;
+    font-family: 'Cutive Mono', monospace;
+    -webkit-text-stroke: 0.3px #7400d3;
     height: 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 20px;
     text-align: center;
-    background-color: #9E00D3;
+    border: 1px solid #a6ff00;
     padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 20px;
     margin: 0 auto;
 }
 
 li a {
     text-decoration: none;
-    color: #1c1d25;
-}
-
-a:hover {
     color: #ffffff;
 }
 
-h1 {
-    color: transparent;
-    font-size: 70px;
-    margin: 0;
-    -webkit-text-stroke: 2px #9E00D3;
+a:hover {
+    color: #a6ff00;
 }
 
-h1:hover {
-    color: #000000;
+h2,p,h3{
+ color: #a6ff00;
+    font-family: 'Cutive Mono', monospace;
 }
-
 
 
 p {
     margin-bottom: 20;
     font-weight: 500;
     font-size: 20px;
-    color: #ffffff;
 }
 
 .hero-area {
@@ -165,7 +187,9 @@ p {
 
 
 .logo {
-    height: 80px;
+    color: #a6ff00;
+    padding: 15px;
+    height: 50px;
     margin: 5px;
 
 }
@@ -184,7 +208,7 @@ p {
 
 .sub-section,
 .sub-section-alternative {
-    background-color: #9E00D3;
+    background-color: #1c1d25;
 }
 
 .sub-section {
@@ -194,6 +218,7 @@ p {
 }
 
 .headshot {
+    border: 2px solid #a6ff00;
     width: 300px;
     border-radius: 150px;
 }
@@ -230,9 +255,7 @@ hr {
     color: rgb(190, 186, 186);
 }
 
-h3 {
-    color: rgb(255, 255, 255);
-}
+
 
 
 
@@ -275,9 +298,13 @@ form textarea {
 }
 
 form button {
-    background: #9E00D3;
+    background-color: transparent;
+    color: #a6ff00;
+    /*
     color: rgb(140, 138, 138);
     border-color: #1a101d;
+    */
+    border-color: #a6ff00;
     outline: none;
     cursor: pointer;
 }
@@ -295,41 +322,57 @@ section .star {
 
 section .star.star1 {
     animation-delay: 0s;
+    animation: rotate 8s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star1.png');
 }
 
 section .star.star2 {
     animation-delay: -1s;
+    animation: rotate 7s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star2.png');
 }
 
 section .star.star3 {
     animation-delay: -2s;
+    animation: rotate 6s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star3.png');
 }
 
 section .star.star4 {
     animation-delay: -3s;
+    animation: rotate 5s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star4.png');
 }
 
 section .star.star5 {
     animation-delay: -4s;
+    animation: rotate 4s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star5.png');
 }
 
 section .star.star6 {
     animation-delay: -5s;
+    animation: rotate 3s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star6.png');
 }
 
 section .star.star7 {
     animation-delay: -6s;
+    animation: rotate 2s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star7.png');
 }
 
 section .star.star8 {
     animation-delay: -7s;
+    animation: rotate 1s infinite linear;
+    animation-direction: alternate-reverse;
     background: url('images/star8.png');
 }
 
@@ -414,6 +457,20 @@ footer .star {
         transform: scale(0);
     }
 }
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  
+  
 
 
 /* width */
